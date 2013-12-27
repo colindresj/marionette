@@ -21,4 +21,6 @@
 //= require_tree ./config
 //
 //= require app
+//= require_tree ./models
+//= require_tree ./collections
 //= require_tree ./modules
