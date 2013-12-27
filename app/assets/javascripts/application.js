@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require json2
+//= require twitter/bootstrap
 //= require underscore
 //= require handlebars
 //= require backbone

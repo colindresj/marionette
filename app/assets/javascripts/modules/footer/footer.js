@@ -5,7 +5,7 @@ App.module('FooterModule', function(FooterModule, App, Backbone, Marionette, $, 
   // don't start the module until explicitly called
   FooterModule.startWithParent = false;
 
-  API = {
+  var API = {
     showFooter: function(){
       FooterModule.Show.Controller.showFooter();
     }

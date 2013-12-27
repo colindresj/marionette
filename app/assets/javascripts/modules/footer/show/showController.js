@@ -9,7 +9,7 @@ App.module('FooterModule.Show', function(Show, App, Backbone, Marionette, $, _){
       App.footerRegion.show(footerView);
     },
     getFooterView: function(){
-      return new Show.Footer();
+      return new Show.FooterView();
     }
   };
 
