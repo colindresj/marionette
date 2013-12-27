@@ -6,8 +6,22 @@ gem 'rails', '4.0.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+# Thin server
+gem 'thin'
+
+# Eco Templating
+gem 'eco'
+
+# Handlebars assests
+# gem 'handlebars_assets'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+
+# Compass
+gem 'compass-rails'
+
+gem 'bootstrap-sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -34,8 +48,6 @@ end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
-
-gem 'thin'
 
 # Use unicorn as the app server
 # gem 'unicorn'

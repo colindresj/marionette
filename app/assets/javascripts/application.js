@@ -16,6 +16,8 @@
 //= require handlebars
 //= require backbone
 //= require backbone.marionette
+//= require backbone.debugger
+//= require_tree ./config
 //
 //= require app
 //= require_tree ./modules
