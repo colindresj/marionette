@@ -12,6 +12,39 @@ gem 'thin'
 # Eco Templating
 gem 'eco'
 
+# JSON
+gem 'rabl'
+gem 'oj'
+gem 'gon' # Bootstrapping JSON
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'cucumber-rails', require: false
+  gem 'launchy'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+  gem 'jasmine'
+  gem 'shoulda-matchers'
+  gem 'simplecov', :require => false
+  gem 'guard-rails'
+  gem 'guard-rspec', :require => false
+  gem 'terminal-notifier-guard', :require => false
+  gem 'guard-livereload'
+  gem 'guard-cucumber'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'pry-stack_explorer'
+  gem 'annotate'
+  gem 'quiet_assets' # Turns off the Rails asset pipeline log
+  gem 'better_errors'
+  gem 'binding_of_caller' # Advanced features for better_errors (REPL, pretty stack, etc.)
+  gem 'meta_request' # Supporting gem for Rails Panel
+  gem 'rails-erd'
+  gem 'awesome_print'
+end
+
 # Handlebars assests
 # gem 'handlebars_assets'
 
