@@ -1,6 +1,8 @@
 window.App = (function(Backbone, Marionette){
   var application = new Marionette.Application();
 
+  application.rootRoute = 'users';
+
   application.on('initialize:before', function(options){
 
     // hadning off the currentUser object to the user model and
@@ -24,7 +26,10 @@ window.App = (function(Backbone, Marionette){
   });
 
   application.on('initialize:after', function(){
-    if (Backbone.history) Backbone.history.start();
+    if (Backbone.history) {
+      Backbone.history.start();
+      if (this.getCurrentRoute() === '') this.navigate(this.rootRoute, {trigger: true});
+    }
   });
 
   return application;
