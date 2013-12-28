@@ -8,6 +8,10 @@ window.App = (function(Backbone, Marionette){
     App.currentUser = App.request('set:currentUser', options.currentUser);
   });
 
+  application.reqres.setHandler('get:currentUser', function(){
+    return App.currentUser;
+  });
+
   application.addRegions({
     headerRegion: '#header-region',
     mainRegion: '#main-region',
