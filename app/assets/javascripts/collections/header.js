@@ -7,9 +7,9 @@ App.module('Collections', function(Collections, App, Backbone, Marionette, $, _)
   var API = {
     getLinks: function(){
       return new Backbone.Collection([
-        { name: 'Users' },
-        { name: 'Leads'},
-        { name: 'Appointments'}
+        { name: 'Users', url: window.Routes.users_path() },
+        { name: 'Leads', url: window.Routes.leads_path() },
+        { name: 'Appointments', url: '/appointments' }
       ]);
     }
   };
