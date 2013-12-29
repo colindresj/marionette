@@ -1,0 +1,9 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Users</th>
+      <th>Created</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>

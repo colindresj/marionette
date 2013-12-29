@@ -17,6 +17,9 @@ gem 'rabl'
 gem 'oj'
 gem 'gon' # Bootstrapping JSON
 
+# Nice client side routes
+gem 'js-routes'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'

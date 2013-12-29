@@ -1,7 +1,7 @@
 window.App = (function(Backbone, Marionette){
   var application = new Marionette.Application();
 
-  application.rootRoute = 'users';
+  application.rootRoute = window.Routes.users_path();
 
   application.on('initialize:before', function(options){
 

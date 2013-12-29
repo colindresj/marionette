@@ -1,5 +1,4 @@
 // This file is the top most authority for everything that happens in the footer
-
 App.module('FooterModule', function(FooterModule, App, Backbone, Marionette, $, _){
 
   // don't start the module until explicitly called
