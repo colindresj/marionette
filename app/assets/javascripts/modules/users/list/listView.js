@@ -20,10 +20,16 @@ App.module('UsersModule.List', function(List, App, Backbone, Marionette, $, _){
     template: 'users/list/templates/_user'
   });
 
+  List.EmptyView = App.Views.MainItemView.extend({
+    tagName: 'tr',
+    template: 'users/list/templates/_empty'
+  });
+
   List.UsersView = App.Views.MainCompositeView.extend({
     template: 'users/list/templates/_users',
     itemView: List.UserView,
-    itemViewContainer: 'tbody'
+    itemViewContainer: 'tbody',
+    emptyView: List.EmptyView
   });
 
 
